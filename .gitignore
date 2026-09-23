@@ -1,0 +1,52 @@
+# ========== 模型权重（体积大，且每次训练都能重新生成）==========
+*.pt
+*.pth
+*.ckpt
+*.npy
+**/weights/
+
+# ========== 实验结果 / 报告 / 原始数据（一律不进仓库）==========
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.doc
+*.docx
+*.pdf
+*.ppt
+*.pptx
+*.json
+*.md
+*.zip
+*.rar
+*.7z
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.tif
+*.tiff
+
+# 但仓库自己的说明文档要保留
+!README.md
+!AGENTS.md
+!*/README.md
+!docs/assets/*.png
+
+# ========== 数据与中间产物目录 ==========
+data/
+results/
+outputs/
+exports/
+**/cache/
+**/patient_level_exports/
+**/prospective_grayscale_prediction*/
+**/fid_*/
+**/outputs/
+experiment/summary/*.csv
+
+# ========== Python / Notebook / 系统 ==========
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
